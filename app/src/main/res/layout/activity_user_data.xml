@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserData">
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/san_juan"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/bg_white_circle"
+                    android:src="@drawable/ic_truck"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textColor="@color/white"
+                        android:text="@string/transGST"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:text="@string/oneclick"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etGST1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:inputType="textCapCharacters"
+                android:imeOptions="actionSearch"
+                android:maxLength="15"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/pale_grey"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="20dp"
+                android:hint="@string/gstnum"
+                android:background="@drawable/bg_search"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/infoTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/light_grey"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/basicInfo"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:background="@drawable/bg_infobar"
+                android:padding="10dp"
+                android:text="@string/basic"
+                android:textAllCaps="true"
+                android:textColor="@color/san_juan"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_infobar"
+                android:padding="10dp"
+                android:text="@string/firm"
+                android:textAllCaps="true"
+                android:textColor="@color/san_juan"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/bg_infobar"
+                android:padding="10dp"
+                android:text="@string/filing"
+                android:textAllCaps="true"
+                android:textColor="@color/san_juan"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tradeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_info_text"
+                android:padding="20dp"
+                android:text="@string/tradename"
+                android:textAllCaps="true"
+                android:textColor="@color/san_juan"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="2">
+
+                <TextView
+                    android:id="@+id/legalName"
+                    android:layout_width="180dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bg_info_text"
+                    android:padding="6dp"
+                    android:gravity="center"
+                    android:text="@string/lgname"
+                    android:textAllCaps="true"
+                    android:textColor="@color/san_juan"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="175dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_info_text"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="@string/location"
+                    android:textAllCaps="true"
+                    android:textColor="@color/san_juan"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="180dp"
+                    android:layout_height="64dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_info_text"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="@string/status"
+                    android:textAllCaps="true"
+                    android:textColor="@color/san_juan"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/regType"
+                    android:layout_width="175dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_info_text"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="@string/regType"
+                    android:textAllCaps="true"
+                    android:textColor="@color/san_juan"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/compliance"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_info_text"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/comStatus"
+                android:textAllCaps="true"
+                android:textColor="@color/san_juan"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

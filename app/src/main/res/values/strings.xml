@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GSTIN Search</string>
+    <string name="transGST">Trans Gst GSTIN - Info</string>
+    <string name="oneclick">gstin info on one click</string>
+    <string name="gstnum">GSTIN NUMBER</string>
+    <string name="hometext">To Search GSTIN Info: <br /> Type GSTIN In Search Box Or <br /> Click The Camera Icon And Scan The GSTIN</string>
+    <string name="basic">Basic Info</string>
+    <string name="firm">Firm Info</string>
+    <string name="filing">Filing Status</string>
+    <string name="tradename">Trade Name If Any <br/>Sprouting Wings Digital Marketing</string>
+    <string name="lgname">Legal Name <br/>Dharamveer Sharma</string>
+    <string name="location">Location <br/>Jaipur</string>
+    <string name="status">Status <br/>Active</string>
+    <string name="regType">Registration Type <br/>Regular</string>
+    <string name="comStatus">Compliance Status <br/>Status Of GST Filing</string>
+</resources>

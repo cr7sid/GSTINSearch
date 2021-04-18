@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/san_juan"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/bg_white_circle"
+                    android:src="@drawable/ic_truck"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:textColor="@color/white"
+                        android:text="@string/transGST"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:text="@string/oneclick"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etGST"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:inputType="textCapCharacters"
+                android:imeOptions="actionSearch"
+                android:maxLength="15"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/pale_grey"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="20dp"
+                android:hint="@string/gstnum"
+                android:background="@drawable/bg_search"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear1"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/homeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="90dp"
+            android:text="@string/hometext"
+            android:textAlignment="center"
+            android:textColor="@color/san_juan"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/cam_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bg_camera"
+            android:src="@drawable/ic_camera"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
